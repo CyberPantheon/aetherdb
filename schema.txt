@@ -1,0 +1,32 @@
+Database: aether
+
+
+Table courses:
+- course_id (int(11)) NOT NULL  PRIMARY KEY
+- course_name (varchar(100)) NOT NULL
+- course_code (varchar(10)) NOT NULL
+- credits (int(11)) NULL
+- instructor (varchar(100)) NULL
+- department (varchar(50)) NULL
+  Rows: 5
+
+Table enrollments:
+- enrollment_id (int(11)) NOT NULL  PRIMARY KEY
+- student_id (int(11)) NOT NULL
+- course_id (int(11)) NOT NULL
+- grade (varchar(2)) NULL
+- semester (varchar(10)) NULL
+  Foreign Keys:
+    - student_id → students.student_id
+    - course_id → courses.course_id
+  Rows: 8
+
+Table students:
+- student_id (int(11)) NOT NULL  PRIMARY KEY
+- first_name (varchar(50)) NOT NULL
+- last_name (varchar(50)) NOT NULL
+- email (varchar(100)) NULL
+- phone (varchar(20)) NULL
+- enrollment_date (date) NULL
+- gpa (decimal(3,2)) NULL
+  Rows: 5

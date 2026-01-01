@@ -1,0 +1,14 @@
+{
+  "database_name": "aether",
+  "database_type": "mysql",
+  "created_at": "2026-01-01T21:44:00.733992",
+  "last_updated": "2026-01-01T21:44:00.733992",
+  "version": 1,
+  "table_count": 3,
+  "schema_hash": "84a3d18a6dd3932d80cc9cb47e58090b",
+  "tables": [
+    "courses",
+    "enrollments",
+    "students"
+  ]
+}
